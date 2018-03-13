@@ -1,12 +1,12 @@
 function angkaPrima(angka) {
-
-       for (var i = 2; i < angka; i++) {
-            if (angka % i === 0) {
-                return 'Bukan Prima';
-            }
+    
+    for (var i = 2; i < angka; i++) {
+        if (angka % i === 0) {
+        return false;
         }
-        return 'Prima'
     }
+        return true;
+}
 console.log(angkaPrima(3)); // true
 console.log(angkaPrima(7)); // true
 console.log(angkaPrima(6)); // false
