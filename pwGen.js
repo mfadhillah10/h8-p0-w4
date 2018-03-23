@@ -3,7 +3,8 @@ function changeVocals (str) {
   for (var i in str) {
     if (str[i] == 'a' || str[i] == 'e' || str[i] === 'i' || str[i] == 'u' || str[i] === 'o' || str[i] == 'A' || str[i] == 'E' || str[i] === 'I' || str[i] == 'U' || str[i] === 'O') {
       kata += String.fromCharCode((str[i].charCodeAt(0)+95)-94);
-    }else {
+    }
+    else {
       kata += str[i];
     }
   }
@@ -23,7 +24,8 @@ function setLowerUpperCase (str) {
   for (var i in str) {
     if(str[i] === str[i].toLowerCase()) {
       kata += str[i].toUpperCase();
-    }else {
+    }
+    else {
       kata += str[i].toLowerCase();
     }
   }
